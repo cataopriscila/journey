@@ -1,0 +1,55 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;   
+    height: 50rem;
+
+    &__side {        
+        color: white;
+        font-size: 3rem;
+        height: 50rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem (rgba($color-black, .15));
+            
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        
+        &--back {
+            background-color: green;
+            transform: rotateY(180deg);
+
+            &-orange {
+                background-image: linear-gradient(to right bottom, $color-secondary-light-orange, $color-secondary-dark-orange)
+            }
+
+            &-purple {
+                background-image: linear-gradient(to right bottom, $color-secondary-light-purple, $color-secondary-dark-purple)
+            }
+
+            &-red {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+            }
+            
+        }
+    }
+
+    &:hover &__side--front {
+    transform: rotateY(180deg);
+    z-index: 1;
+
+    }   
+    
+    &:hover &__side--back {
+        transform: rotateY(0);
+        
+        } 
+}
