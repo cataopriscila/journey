@@ -12,7 +12,7 @@
         rgba($color-primary-dark, 0.25)
       ),
       url(../img/nat-4.jpg);
-      background-size: cover;
+    background-size: cover;
     background-position-y: top;
     transform: skewY(-7deg);
     margin-top: -10rem;
@@ -24,6 +24,6 @@
 
 .section-examples {
     background-color: $color-grey-light-1;
-    padding: 25rem 0 50rem 0;
+    padding: 25rem 0 15rem 0;
     margin-top: -10rem;
 }
