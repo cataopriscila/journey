@@ -40,6 +40,7 @@
     $color-primary-light-pale,
     $color-primary-dark
   );
+  
 }
 
 .newsletter {
@@ -49,8 +50,14 @@
         rgba($color-white, .9) 50%, 
         transparent 50%), 
         url(../img/nat-10.jpg);
-  background-size: cover;
+  background-size: cover;  
   height: 50rem;
   border-radius: $border-radius;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    
+  }
 }
