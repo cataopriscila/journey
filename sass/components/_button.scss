@@ -12,9 +12,10 @@
     position: relative;
     font-size: 1.3rem;
 
-    //Changes for the button html element
+    //Changes for the <button> from newsletter
     border: none;
     cursor: pointer;
+
     }
 
     &:hover {
@@ -26,7 +27,9 @@
             }        
     }
 
-    &:active {
+    &:active,
+    &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
     }
