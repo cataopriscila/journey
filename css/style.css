@@ -478,10 +478,10 @@ body {
   position: relative; }
   .header__logo-container {
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     left: 4rem; }
   .header__logo {
-    height: 3.5rem;
+    height: 4rem;
     transition: 1.5s; }
     .header__logo:hover {
       transform: rotate(360deg); }
@@ -563,22 +563,25 @@ body {
 
 .navigation__button {
   background-color: white;
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  z-index: 20;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
-
-.navigation__background {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 5.5rem;
+  right: 5.5rem;
+  z-index: 20;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+  text-align: center;
+  cursor: pointer;
+  transition: all .5s; }
+
+.navigation__background {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
   background-image: radial-gradient(#e85e68, #89050f);
   z-index: 10;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -623,11 +626,45 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(100); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2.5rem;
+    height: 1.3px;
+    background-color: #555;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-45deg); }
 
 .section-about {
   background-color: #f7f7f7;
