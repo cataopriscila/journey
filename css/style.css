@@ -761,7 +761,7 @@ body {
   background-image: linear-gradient(to right bottom, #fa8e96, #89050f); }
 
 .newsletter {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(../img/mailboxes.jpg);
   background-size: cover;
   height: 50rem;
   border-radius: 3px;
