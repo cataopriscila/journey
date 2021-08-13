@@ -17,18 +17,28 @@
   </head>
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id= "nav-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
       <label for="nav-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
       <div class="navigation__background"></div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About Journey</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">The benfits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Popular journeys</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Start Now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About Journey</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">The benfits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Popular journeys</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Start Now</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -41,7 +51,9 @@
           <span class="heading-primary--main">Journey</span>
           <span class="heading-primary--sub">where your life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Start now</a>
+        <a href="#section-examples" class="btn btn--white btn--animated"
+          >Meet the journers</a
+        >
       </div>
     </header>
 
@@ -146,7 +158,7 @@
         </div>
       </section>
 
-      <section class="section-examples">
+      <section class="section-examples" id="section-examples">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular journeys</h2>
         </div>
@@ -173,16 +185,10 @@
               <div class="card__side card__side--back card__side--back-orange">
                 <div class="card__cta">
                   <div class="card__funding-container">
-                    <p class="card__funding-text">Buy me</p>
-                    <p class="card__funding-value">$.99</p>
+                    <p class="card__funding-text">Fund me</p>
+                    <p class="card__funding-value">$15</p>
                   </div>
-                  <a
-                    href="https://www.amazon.com/Igreja-Schreberiana-dos-Nervos-Deus-Portuguese-ebook/dp/B08L9QLBNS"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    class="btn btn--white"
-                    >Buy now</a
-                  >
+                  <a href="#popup" class="btn btn--white">Donate now</a>
                 </div>
               </div>
             </div>
@@ -212,7 +218,7 @@
                     <p class="card__funding-text">Fund me</p>
                     <p class="card__funding-value">$10</p>
                   </div>
-                  <a href="#" class="btn btn--white">Donate now</a>
+                  <a href="#popup" class="btn btn--white">Donate now</a>
                 </div>
               </div>
             </div>
@@ -303,7 +309,7 @@
           </div>
         </div>
         <div class="u-center-text u-margin-top-big">
-          <a href="#" class="btn-text">Read about journers &rarr;</a>
+          <a href="#" class="btn-text">Read more &rarr;</a>
         </div>
       </section>
 
@@ -316,33 +322,55 @@
               </div>
               <form action="#" class="form">
                 <div class="form__group">
-                  <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                  <label for="name" class="form__label">Full name</label>                  
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
                 </div>
                 <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
                   <label for="email" class="form__label">Email address</label>
                 </div>
 
                 <div class="form__group u-margin-bottom-medium">
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="news" name="option">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="news"
+                      name="option"
+                    />
                     <label for="news" class="form__radio-label">
-                      <span class="form__radio-button"></span> 
+                      <span class="form__radio-button"></span>
                       Daily
                     </label>
-                  </div> 
+                  </div>
                   <div class="form__radio-group">
-                    <input type="radio" class="form__radio-input" id="newsandjourneys" name="option">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="newsandjourneys"
+                      name="option"
+                    />
                     <label for="newsandjourneys" class="form__radio-label">
                       <span class="form__radio-button"></span>
                       Weekly
                     </label>
-                  </div>                  
+                  </div>
                 </div>
-                 <div class="form__group">
-                   <button class="btn btn--red">Subscribe</button>
-                 </div>                
+                <div class="form__group">
+                  <button class="btn btn--red">Subscribe</button>
+                </div>
               </form>
             </div>
           </div>
@@ -352,50 +380,87 @@
 
     <footer class="footer">
       <div class="footer__logo-container">
-        <img src="img/logo-white.png" alt="Full logo" class="footer__logo">
+        <img src="img/logo-white.png" alt="Full logo" class="footer__logo" />
         <h3><strong>Journey of Life</strong></h3>
       </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Carreers</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carreers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
             </ul>
-          </div>          
+          </div>
         </div>
         <div class="col-1-of-2">
-          <p class="footer__copyright">Built by <a href="#" class="footer__link">Journey Team</a>, March, 2021. <a href="#" class="footer__link"> Click for more information</a>. Copyright &copy; Journey Team. Design inspired by Jonas Schmedtmann - our special thanks!
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Journey Team</a>, March,
+            2021.
+            <a href="#" class="footer__link"> Click for more information</a>.
+            Copyright &copy; Journey Team. Design inspired by Jonas Schmedtmann
+            - our special thanks!
           </p>
         </div>
       </div>
     </footer>
 
-    <div class="popup">
-      <div class="popup__content">        
-          <div class="popup__content--left">              
-                <img src="img/nat-8.jpg" alt="Fund photo 1"/>
-                <img src="img/nat-9.jpg" alt="Fund photo 2"/>              
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__content--left">
+          <img src="./img/nat-8.jpg" alt="Fund photo 1" />
+          <img src="./img/nat-5.jpg" alt="Fund photo 2" />
+        </div>
+        <div class="popup__content--right">
+          <a href="#section-examples" class="popup__back">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start funding!
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Testimony from this journer:
+          </h3>
+          <div class="popup__text">
+            <p>
+              "I've finally published my first book in Portuguese, now I'm
+              looking foward to translating it to English and share it with the
+              world!
+            </p>
+            <p>
+              Even though I know that it is mostly about a mixture of madness
+              and brazilian music, I believe that most people would enjoy to
+              read it.
+            </p>
+            <p>
+              I chose to start with an e-book 'cause it wouldn't be a problem,
+              since I could do it (cover design, editing, and publishing) all by
+              myself. But now I wish I could publish it on paper too!"
+            </p>
           </div>
-          <div class="popup__content--right">                                
-                <h2 class="heading-secondary u-margin-bottom-small">Start funding!</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Testimony from this journer:</h3>
-                <div class="popup__text">
-                  <p>"I've finally published my first book in Portuguese, now I'm looking foward to translating it to English and share it with the world!</p>
-                  <p>Even though I know that it is mostly about a mixture of madness and brazilian music, I believe that most people would enjoy to read it.</p>
-                  <p>I chose to start with an e-book 'cause it wouldn't be a problem, since I could do it (cover design, editing, and publishing) all by myself. But now I wish I could publish it on paper too!"</p>
-                </div>
-                
-                <a href="#" class="btn btn--red">Fund me</a>             
-          </div>                      
-        </div> 
-      </div>    
-    
 
-
+          <a href="#" class="btn btn--red u-margin-right-medium">Fund me</a>
+          <a
+            href="https://www.amazon.com/Igreja-Schreberiana-dos-Nervos-Deus-Portuguese-ebook/dp/B08L9QLBNS"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="btn btn--red"
+          >
+            Buy e-book
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!--
     <section class="grid-test">
