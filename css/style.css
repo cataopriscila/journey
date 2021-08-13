@@ -157,7 +157,7 @@ body {
   background-color: #ce3843;
   color: white; }
   .btn--red::after {
-    background-color: white; }
+    background-color: #ce3843; }
 
 .btn::after {
   content: "";
@@ -278,11 +278,11 @@ body {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #e9ab00, #b65622), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #e9ab00, #b65622), url(../img/books.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #e85e68, #89050f), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #e85e68, #89050f), url(../img/music.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #9c4cf8, #370566), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #9c4cf8, #370566), url(../img/married.jpg); }
   .card__heading {
     font-size: 2.2rem;
     font-weight: 300;
@@ -739,9 +739,9 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(250, 142, 150, 0.25), rgba(137, 5, 15, 0.25)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(250, 142, 150, 0.1), rgba(137, 5, 15, 0.1)), url(../img/feat-1.jpg);
   background-size: cover;
-  background-position-y: top;
+  background-position-y: center;
   transform: skewY(-6deg);
   margin-top: -10rem; }
   .section-features > * {

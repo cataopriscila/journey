@@ -8,12 +8,12 @@
   padding: 20rem 0;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light-pale, 0.25),
-      rgba($color-primary-dark, 0.25)
+      rgba($color-primary-light-pale, 0.1),
+      rgba($color-primary-dark, 0.1)
     ),
-    url(../img/nat-4.jpg);
+    url(../img/feat-1.jpg);
   background-size: cover;
-  background-position-y: top;
+  background-position-y: center;
   transform: skewY(-6deg);
   margin-top: -10rem;
 

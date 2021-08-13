@@ -32,6 +32,7 @@
     outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+
     }
 
     &--white {
@@ -48,9 +49,10 @@
         color: $color-white;
     
             &::after {
-                background-color: $color-white;
-                }
-        }
+                background-color: $color-primary;
+                } 
+                
+        }    
 
     &::after {
     content: "";
@@ -64,6 +66,7 @@
     z-index: -1;
     transition: all .4s;
     }   
+    
 
     &--animated {
     animation: moveInBottom .5s ease-out .75s;
@@ -94,8 +97,6 @@
 
     &:active {
         box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
-        transform: translateY(0);  
-
-
+        transform: translateY(0); 
     }
 }
