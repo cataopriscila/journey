@@ -33,6 +33,30 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
+.icofont-map:before
+{
+  content: "\ef8b";
+}
+
+.icofont-ui-video:before
+{
+  content: "\ec93";
+}
+
+.icofont-brand-slideshare:before
+{
+  content: "\e934";
+}
+
+.icofont-google-talk:before
+{
+  content: "\ed44";
+}
+
+/*Classes not used*/
+
+/* 
+
 .icofont-angry-monster:before
 {
   content: "\e800";
@@ -1573,10 +1597,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\e933";
 }
 
-.icofont-brand-slideshare:before
-{
-  content: "\e934";
-}
 
 .icofont-brand-smashing-magazine:before
 {
@@ -5888,10 +5908,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ec92";
 }
 
-.icofont-ui-video:before
-{
-  content: "\ec93";
-}
 
 .icofont-ui-volume:before
 {
@@ -6773,10 +6789,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed43";
 }
 
-.icofont-google-talk:before
-{
-  content: "\ed44";
-}
 
 .icofont-hype-machine:before
 {
@@ -9688,11 +9700,6 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ef8a";
 }
 
-.icofont-map:before
-{
-  content: "\ef8b";
-}
-
 .icofont-maximize:before
 {
   content: "\ef8c";
@@ -10754,4 +10761,4 @@ url("./fonts/icofont.woff") format("woff");
   position: static;
   width: auto;
 }
-	
+	 */
