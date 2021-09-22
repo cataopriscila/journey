@@ -7,6 +7,13 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "pages/home";
+
+@import "layout/header";
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
+
 @import "components/button";
 @import "components/composition";
 @import "components/feature-container";
@@ -15,10 +22,3 @@
 @import "components/bg-video";
 @import "components/form";
 @import "components/popup";
-
-@import "layout/header";
-@import "layout/grid";
-@import "layout/footer";
-@import "layout/navigation";
-
-@import "pages/home";
