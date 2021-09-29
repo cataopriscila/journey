@@ -1,28 +1,32 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-}
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin linearGradient {
-            display: inline-block;
-            background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);            
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @mixin absCenter {
-        position: absolute;           
-        top: 50%;  
-        left: 50%;                
-        transform: translate(-50%, -50%);
-};
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 //Media query
+//Order: Base, typography, general layout, grid, page layout, components
 
 /*
 Breakpoint options
@@ -33,28 +37,27 @@ Breakpoint options
 */
 
 @mixin respond($breakpoint) {
-        @if $breakpoint == phone {
-                @media (max-width: 600px) {
-                        @content
-                }                
-        };
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
 
-        @if $breakpoint == tab-portrait {
-                @media (max-width: 900px) {
-                        @content
-                }                
-        };
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
 
-        @if $breakpoint == tab-landscape {
-                @media (max-width: 1200px) {
-                        @content
-                }                
-        };
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
 
-        @if $breakpoint == big-desktop {
-                @media (min-width: 1800px) {
-                        @content
-                }                
-        };
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
 }
-

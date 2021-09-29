@@ -9,7 +9,15 @@
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    position: relative;
+    position: relative;      
+
+      @include respond(tab-portrait) {
+        clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+      }
+
+      @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      }
   
       &__logo-container {
           position: absolute;

@@ -18,6 +18,11 @@
         text-align: center;
         cursor: pointer;
         transition: all .5s;
+
+        @include respond(tab-portrait) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
         
     }
 
@@ -31,6 +36,11 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 10;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond(tab-portrait) {
+            top: 4rem;
+            right: 4rem;
+        }
         
     }
 
@@ -64,7 +74,7 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             font-weight: 300;
             padding: 1rem 3rem;       
             color: $color-white;
