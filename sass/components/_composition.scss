@@ -6,6 +6,7 @@
             box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
             border-radius: $border-radius;
             position: absolute;
+            z-index: 2;
             transition: all .5s;
             outline-offset: 2rem;
 

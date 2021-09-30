@@ -167,8 +167,7 @@ body {
   margin-top: -15vh; }
   @media (max-width: 900px) {
     .section-about {
-      padding: 20rem 0;
-      margin-bottom: 15vh; } }
+      padding-bottom: 45rem; } }
 
 .section-features {
   padding: 20rem 0;
@@ -179,6 +178,9 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(6deg); }
+  @media (max-width: 900px) {
+    .section-features {
+      padding: 10rem 0; } }
 
 .section-examples {
   background-color: #f7f7f7;
@@ -186,7 +188,10 @@ body {
   margin-top: -10rem; }
   @media (max-width: 900px) {
     .section-examples {
-      padding: 20rem 0 10rem 0; } }
+      padding: 20rem 20rem 10rem; } }
+  @media (max-width: 600px) {
+    .section-examples {
+      padding: 20rem 5rem 10rem; } }
 
 .section-stories {
   padding: 15rem 0;
@@ -252,7 +257,7 @@ body {
   @media (max-width: 900px) {
     .row {
       max-width: 50rem;
-      padding: 0 3rem; } }
+      padding: 0 4rem; } }
   .row::after {
     content: "";
     display: table;
@@ -276,6 +281,9 @@ body {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
+    @media (max-width: 900px) {
+      .row .col-1-of-4 {
+        padding: 0 5rem; } }
   .row .col-2-of-4 {
     width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
@@ -525,6 +533,7 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 3px;
     position: absolute;
+    z-index: 2;
     transition: all .5s;
     outline-offset: 2rem; }
     .composition__photo--p1 {
@@ -552,6 +561,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all .5s; }
+  @media (max-width: 900px) {
+    .feature-container {
+      padding: 2rem; } }
   .feature-container__icon {
     font-size: 6rem;
     margin-bottom: 1rem;
